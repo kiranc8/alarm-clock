@@ -1,0 +1,130 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+.container,
+.form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #97d2f1;
+}
+
+/**************************** Styling for container ********************************/
+.container {
+    width: 480px;
+    padding: 30px 30px 38px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container i {
+    max-width: 103px;
+}
+
+/**************************** inputs ********************************/
+.container .form-inline {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-inline .form-group {
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    width: calc(100% / 4 - 5px);
+}
+
+.form-inline.disable .form-group {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+input {
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+#alarm-am-pm{
+    font-size: 15px;
+}
+.form-group input {
+    width: 100%;
+    height: 53px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 19px;
+}
+
+#alarm-am-pm {
+    border: none;
+    height: 53px;
+    width: 100%;
+}
+
+.container #set-alarm {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #4A98F7;
+}
+
+/**************************** Alarm List ********************************/
+.list-group {
+    margin-top: 20px;
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-item .text {
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.list-item .delete-btn {
+    display: flex;
+    color: #F24C3D;
+    width: 25px;
+    height: 25px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn .fa-trash {
+    width: 25px;
+    height: 25px;
+}
